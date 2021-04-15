@@ -577,7 +577,6 @@ input[type=checkbox] {
 
 footer {
     background-color: #333;
-    padding: 50px;
     font-size: 80%;
 }
 
@@ -692,3 +691,12 @@ footer p {
 }
 
 
+
+
+
+.footer-name {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    color: #888;
+}
