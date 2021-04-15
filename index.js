@@ -12,6 +12,16 @@ app.get('*',(req,res)=>{
      res.sendFile(__dirname+'/error.html')
 })
 
+
+
+app.post('/sendingEmail',(req,res)=>{
+     console.log("req: ");
+    const util = require('util')
+    
+    console.log(util.inspect(req.body, {showHidden: false, depth: null}))
+    res.send({"thank":"you"});
+})
+
 app.listen(port,()=>{
     console.log(`Listening on port ${port}`)
 })

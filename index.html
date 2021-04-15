@@ -10,31 +10,37 @@
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         
+        <link rel="shortcut icon" href="/imgs/Logo%20icon.ico">
         
     <link rel="stylesheet" type="text/css" href="resources/css/tooltipster-master/dist/css/tooltipster.bundle.min.css" />
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script type="text/javascript" src="resources/css/tooltipster-master/dist/js/tooltipster.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/tooltipster-master/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
-<!--
     
     <script>
-        $(document).ready(function() {
-            $('.tooltip').tooltipster({
-            theme: 'tooltipster-punk'});
-        });
-        
-        
+//        $(document).ready(function() {
+//            $('.tooltip').tooltipster({
+//            theme: 'tooltipster-punk'});
+//        });
+//        
+//        
+        function hover(element) {
+  element.setAttribute('src', 'imgs/LOGOGOOG.jpg');
+}
+
+function unhover(element) {
+  element.setAttribute('src', 'imgs/PPLE.png');
+}
     </script>        
--->
         
-        <title>PEPLE Parts & Supply</title>
+        <title>PEPLE PARTS & SUPPLY</title>
     </head>
     <body>
         <header id="home">
             <nav>
                 <div class="row">
-                    <img src="imgs/logo.png" alt="Peple logo" class="logo">
+                    <img src="imgs/PPLE.png" alt="Peple logo" class="logo" onmouseover="hover(this);" onmouseout="unhover(this);">
                     <img src="imgs/logo.png" alt="Peple logo" class="logo-black">
                     <ul class="main-nav js--main-nav">
                         <li><a href="#home">HOME</a></li>
@@ -150,7 +156,7 @@
                 <h2>We're happy to hear from you</h2>
             </div>
             <div class="row">
-                <form method="post" action="#" class="contact-form">
+                <form method="post" action="sendingEmail" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
                             <label for="name">Name</label>
