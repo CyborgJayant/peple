@@ -112,6 +112,11 @@ $(document).ready(function() {
         moveRight();
         e.preventDefault();
     });
+    
+    /*Auto SlideShow*/
+    setInterval(function () {
+        moveRight();
+    }, 3000);
 
 });
 
