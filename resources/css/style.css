@@ -758,3 +758,13 @@ a.control_next {
   width: 160px;
   font-size: 18px;
 }
+
+/* ABOUT US*/
+.aboutusDiv {
+    margin-top: 5%;
+}
+.aboutusText {
+    font-family: sans-serif;
+    font-size: 125%;
+    font-weight: 500;
+}
