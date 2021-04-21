@@ -345,7 +345,6 @@ header {
     overflow: hidden;
     background-color: #fff;
     list-style: none;
-    
 }
 
 .product-photo {
@@ -353,7 +352,6 @@ header {
     margin: 0;
     overflow: hidden;
     background-color: #000;
-    
     border-radius: 20px;
 }
 
@@ -762,11 +760,48 @@ a.control_next {
 }
 
 /* ABOUT US*/
+/*
 .aboutusDiv {
     margin-top: 5%;
 }
+*/
 .aboutusText {
     font-family: sans-serif;
     font-size: 125%;
     font-weight: 500;
 }
+
+/* Mission and Vision Pic*/
+.aboutus-imgs {
+    width: 100%;
+    overflow: hidden;
+    background-color: auto;
+    list-style: none;
+}
+
+.aboutus-imgs li :first-child{
+    margin-left: 35%;
+}
+.aboutus-imgs li{
+    display: block;
+    float : left;
+    width: 28%;
+    margin: 0 5% 0% 3%;
+}
+
+
+.mission-photo img{
+    width: 320px;
+    height: 500px;
+    overflow: hidden;
+    background-color: auto;
+    float: left;
+}
+.vision-photo img{
+    width: 320px;
+    height: 500px;
+    overflow: hidden;
+    background-color: auto;
+}
+
+
