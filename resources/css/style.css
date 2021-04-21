@@ -64,7 +64,7 @@ h1 {
     margin-top: 10%;
     margin-left: -5%;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
     font-size: 200%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -192,7 +192,7 @@ input[type=submit]:active {
 
 header {
 /*    background-image: -webkit-linear-gradient(rgba(145, 137, 137, 0.7), rgba(139, 128, 128, 0.7)), url(img/hero.jpg);*/
-    background-image: url(img/BackgroundPhoto1.png);
+    background-image: url(img/BackgroundPhoto2.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -215,6 +215,7 @@ header {
     width: auto;
     float: left;
     margin-top: 20px;
+    transform: scale(1.5);
 }
 .logo-black { 
     display: none;
@@ -223,13 +224,14 @@ header {
     width: auto;
     float: left;
     margin: 5px 0;
+    transform: scale(1.7);
 }
 
 /* Main navi */
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 100px;
 }
 
 .main-nav li {
@@ -240,7 +242,7 @@ header {
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
