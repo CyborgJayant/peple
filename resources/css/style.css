@@ -712,3 +712,139 @@ a.control_next {
 }
 
 
+
+
+/*Products css*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.honeycomb-left {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  transform: translateY(50px);
+}
+.honeycomb-left-cell {
+  flex: 0 1 250px;
+  max-width: 250px;
+  height: 100px;
+  margin: 47.619047619px 25px 50px;
+  position: relative;
+  padding: 0.5em;
+  text-align: center;
+  z-index: 1;
+}
+.honeycomb-left-cell__title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  word-break: break-word;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.75em;
+  transition: opacity 350ms;
+}
+.honeycomb-left-cell__title > small {
+  font-weight: 300;
+  margin-top: 0.25em;
+}
+.honeycomb-left-cell__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.honeycomb-left-cell::before, .honeycomb-left-cell::after {
+  content: "";
+}
+.honeycomb-left-cell::before, .honeycomb-left-cell::after, .honeycomb-left-cell__image {
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  -webkit-clip-path: polygon(25% 93.4%, 0% 50%, 25% 6.8%, 75% 6.8%, 100% 50%, 75% 93.4%);
+          clip-path: polygon(25% 93.4%, 0% 50%, 25% 6.8%, 75% 6.8%, 100% 50%, 75% 93.4%);
+  z-index: -1;
+}
+.honeycomb-left-cell::before {
+  background: #fff;
+  transform: scale(1.055);
+}
+.honeycomb-left-cell::after {
+  background: #3ea0eb;
+  opacity: 0.5;
+  transition: opacity 350ms;
+}
+.honeycomb-left-cell:hover .honeycomb-left-cell__title {
+  opacity: 0;
+}
+.honeycomb-left-cell:hover::before {
+  background: #72f88e;
+}
+.honeycomb-left-cell:hover::after {
+  opacity: 0;
+}
+.honeycomb-left__placeholder {
+  display: none;
+  opacity: 0;
+  width: 250px;
+  margin: 0 25px;
+}
+
+@media (max-width: 600px) {
+  .honeycomb-left-cell {
+    margin: 75px 50px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .honeycomb-left-cell:nth-child(3n) {
+    margin-right: calc(50% - 125px);
+    margin-left: calc(50% - 125px);
+  }
+
+  .honeycomb-left__placeholder:nth-child(3n+5) {
+    display: block;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .honeycomb-left-cell:nth-child(5n+4) {
+    margin-left: calc(50% - 300px);
+  }
+
+  .honeycomb-left-cell:nth-child(5n+5) {
+    margin-right: calc(50% - 300px);
+  }
+
+  .honeycomb-left__placeholder:nth-child(5n), .honeycomb-left__placeholder:nth-child(5n+3) {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .honeycomb-left-cell:nth-child(7n+5) {
+    margin-left: calc(50% - 425px);
+  }
+
+  .honeycomb-left-cell:nth-child(7n+7), .honeycomb-left-cell:nth-child(7n+5):nth-last-child(2) {
+    margin-right: calc(50% - 425px);
+  }
+
+  .honeycomb-left__placeholder:nth-child(7n+7), .honeycomb-left__placeholder:nth-child(7n+9), .honeycomb-left__placeholder:nth-child(7n+11) {
+    display: block;
+  }
+}
+
