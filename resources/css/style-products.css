@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 body {
-  font-family: "Montserrat", sans-serif;
-  background: #3ea0eb;
+/*  font-family: "Montserrat", sans-serif;*/
+  font-family: 'Crimson Text',, serif;
+  font-weight: 300;
+  font-size: 85%;
+/*  background: #3ea0eb;*/
+  background-image: url(img/BackgroundPhoto2.png);
+  background-size: cover;
 }
+
+
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -17,6 +24,16 @@ a:link,
 a:visited {
     text-decoration: none;
 }
+
+
+
+
+.bothSides{
+    padding: 60px 0;
+}
+
+
+
 
 .leftSide{
     float: left;
@@ -152,12 +169,6 @@ a:visited {
 
 
 
-
-
-
-
-
-
 /*********/
 
 .honeycomb-left {
@@ -172,7 +183,17 @@ a:visited {
 /*  transform: translateY(60.5px);*/
 }
 .honeycomb-left-cell {
-  flex: 0 1 220px;
+  flex: 0 1 160px;
+  max-width: 160px;
+  height: 55px;
+  margin: 40px 12.5px 25px;
+  position: relative;
+  padding: 0.5em;
+  text-align: center;
+  z-index: 1;
+    
+/*
+    flex: 0 1 220px;
   max-width: 220px;
   height: 75px;
   margin: 50px 12.5px 25px;
@@ -180,6 +201,7 @@ a:visited {
   padding: 0.5em;
   text-align: center;
   z-index: 1;
+*/
 }
 .honeycomb-left-cell__title {
   height: 100%;

@@ -4,17 +4,37 @@
   <meta charset="UTF-8">
   <title>CodePen - Responsive Honeycomb Layout</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./resources/css/grid.css">
 <link rel="stylesheet" href="./resources/css/style-products.css">
 <link rel="stylesheet" href="./resources/css/style-bearing.css">
 <link rel="stylesheet" href="./resources/css/style-popup.css">
+<link rel="stylesheet" href="./resources/css/style-navbar.css">
+<link rel="stylesheet" href="./resources/css/style-form.css">
 <script src="./resources/js/script-products.js"></script>
 <script  src="./resources/js/script-popup.js"></script>
-  <link rel="stylesheet" href="./style12.css">
+  <link rel="stylesheet" href="./style-bearingpage.css">
 
   
 </head>
 <body>
 
+    <nav class="sticky">
+        <div class="row">
+            <img src="imgs/logopng%20crop.png" alt="Peple logo" class="logo">
+            <ul class="main-nav">
+                <li><a href="./index.html#home">HOME</a></li>
+                <li><a href="./index.html#products">PRODUCTS</a></li>
+                <li><a href="./index.html#aboutus">ABOUT US</a></li>
+                <li><a href="./index.html#form">CONTACT US</a></li>
+            </ul>
+            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+        </div>
+    </nav>
+    
+    
+    
+    
+    
    
 <!--
     <a href="#" class="scroll-to-top">
@@ -23,53 +43,361 @@
 -->
     <div class="popup popup_1_1">
       <div class="inner">
-        <center><h2>SINGLE ROW DEEP GROOVE BALL BEARINGS</h2></center>
-        <img class="popup-img"src="resources/BEARINGS/Single%20Deep%20groove%20ball%20bearings.JPG">
-        
-        <p>Contact US : </p>
+        <div class ="popup-left">
+            <center><h2>SINGLE ROW DEEP GROOVE BALL BEARINGS</h2></center>
+            <img class="popup-img"src="resources/BEARINGS/Single%20Deep%20groove%20ball%20bearings.JPG">
+          </div>
+          <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
         <button class="btn">Close</button>
       </div>
     </div>
     <div class="popup popup_1_2">
       <div class="inner">
+        <div class ="popup-left">
         <center><h2>DOUBLE ROW DEEP GROOVE BALL BEARINGS</h2></center>
         <img class="popup-img"src="resources/BEARINGS/Double%20row%20deep%20groove%20ball%20bearings.JPG">
-        
-        <p>Contact US : </p>
+          </div>
+        <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
         <button class="btn">Close</button>
       </div>
     </div>
     <div class="popup popup_1_3">
       <div class="inner">
+        <div class ="popup-left">
         <center><h2>SINGLE ROW ANGULAR CONTACT BALL BEARINGS</h2></center>
         <img class="popup-img"src="resources/BEARINGS/Single%20row%20angular%20contact%20ball%20bearings.JPG">
-        <p>Contact US : </p>
+          </div>
+        <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
         <button class="btn">Close</button>
       </div>
     </div>
     <div class="popup popup_1_4">
       <div class="inner">
+        <div class ="popup-left">
         <center><h2>DOUBLE ROW ANGULAR CONTACT BALL BEARINGS</h2></center>
         <img class="popup-img"src="resources/BEARINGS/Double-row%20angular%20contact%20ball%20bearings.JPG">
-        <p>Contact US : </p>
+          </div>
+        <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
         <button class="btn">Close</button>
       </div>
     </div>
     <div class="popup popup_1_5">
       <div class="inner">
+        <div class ="popup-left">
         <center><h2>FOUR POINT CONTACT BALL BEARINGS</h2></center>
         <img class="popup-img"src="resources/BEARINGS/Four-point%20contact%20ball%20bearings.JPG">
-        
-        <p>Contact US : </p>
+          </div>
+        <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
         <button class="btn">Close</button>
       </div>
     </div>
     <div class="popup popup_1_6">
       <div class="inner">
+        <div class ="popup-left">
         <center><h2>SELF ALIGNING BALL BEARINGS</h2></center>
         <img class="popup-img"src="resources/BEARINGS/Self-aligning%20ball%20bearings.JPG">
-        
-        <p>Contact US : </p>
+          </div>
+        <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
         <button class="btn">Close</button>
       </div>
     </div>
@@ -108,7 +436,246 @@
       </div>
     </div>
     
-    
+    <div class="popup popup_3_1">
+      <div class="inner">
+        <div class ="popup-left">
+            <center><h2>PILLOW BLOCKS(SOLID OR SPLIT)</h2></center>
+            <img class="popup-img"src="resources/BEARINGS/PILLOW%20BLOCKS.png">
+          </div>
+          <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
+        <button class="btn">Close</button>
+      </div>
+    </div>
+    <div class="popup popup_3_2">
+      <div class="inner">
+        <div class ="popup-left">
+        <center><h2>FLANGED CARTRIDGES</h2></center>
+        <img class="popup-img"src="resources/BEARINGS/Flanged%20cartridges.png">
+          </div>
+        <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
+        <button class="btn">Close</button>
+      </div>
+    </div>
+    <div class="popup popup_3_3">
+      <div class="inner">
+        <div class ="popup-left">
+        <center><h2>CYLINDRICAL FLANGED CARTRIDGES</h2></center>
+        <img class="popup-img"src="resources/BEARINGS/Cylindrical%20cartridges.png">
+          </div>
+        <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
+        <button class="btn">Close</button>
+      </div>
+    </div>
+    <div class="popup popup_3_4">
+      <div class="inner">
+        <div class ="popup-left">
+        <center><h2>TAKE-UP UNITS</h2></center>
+        <img class="popup-img"src="resources/BEARINGS/Take-up%20units..png">
+          </div>
+        <div class="popup-right">
+              <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row form-data">
+                    <form method="post" action="sendingEmail" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="number" id="number" placeholder="Your Mobile Number" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                
+            </div>
+        <button class="btn">Close</button>
+      </div>
+    </div>
     <div class="popup popup_4_1">
       <div class="inner">
         <center><h2>AIR</h2></center>
@@ -246,7 +813,7 @@
     
 
     
-
+<div class="bothSides">
    <div class="leftSide">
 <ul class="honeycomb-left" lang="es">
   <li class="honeycomb-left-cell">
@@ -318,8 +885,6 @@
     
     
     
-    
-    
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">
@@ -328,6 +893,7 @@
     
     
     
+<!--
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">1</div>
@@ -340,6 +906,7 @@
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">3</div>
   </li>
+-->
     
     
     
@@ -374,7 +941,7 @@
     
     
     
-    
+<!--
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">4</div>
@@ -383,9 +950,7 @@
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">5</div>
   </li>
-    
-    
-    
+-->
     
   
     
@@ -433,6 +998,7 @@
     <div class="honeycomb-right-cell__title">
       <span class="show-popup" data-popup=".popup_2_2">SPHERICAL ROLLER BEARINGS</span>
   </li>
+<!--
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">1</div>
@@ -445,6 +1011,7 @@
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">3</div>
   </li>
+-->
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image">
     <div class="honeycomb-right-cell__title">
@@ -455,6 +1022,7 @@
     <div class="honeycomb-right-cell__title">
       <span class="show-popup" data-popup=".popup_2_4">CYLINDRICAL ROLLER BEARINGS</span>
   </li>
+<!--
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">4</div>
@@ -470,6 +1038,7 @@
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">7</div>
+-->
   <li class="honeycomb-right-cell honeycomb-right__placeholder"></li>
 </ul>
     </div>
@@ -487,6 +1056,7 @@
     <div class="honeycomb-right-cell__title">
       <span class="show-popup" data-popup=".popup_3_2">FLANGED CARTRIDGES</span>
   </li>
+<!--
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">1</div>
@@ -499,6 +1069,7 @@
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">3</div>
   </li>
+-->
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">
@@ -509,6 +1080,7 @@
     <div class="honeycomb-right-cell__title">
       <span class="show-popup" data-popup=".popup_3_4">TAKE-UP UNITS</span>
   </li>
+<!--
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">4</div>
@@ -524,6 +1096,7 @@
   <li class="honeycomb-right-cell">
     <img class="honeycomb-right-cell__image" >
     <div class="honeycomb-right-cell__title">7</div>
+-->
   <li class="honeycomb-right-cell honeycomb-right__placeholder"></li>
 </ul>
     </div>
@@ -613,6 +1186,8 @@
     
     
 </div>
+        
+        </div>
     <script>
 var slides1 = document.getElementsByClassName("slide");
     

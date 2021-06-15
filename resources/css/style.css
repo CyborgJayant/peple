@@ -195,9 +195,10 @@ input[type=submit]:active {
 
 header {
 /*    background-image: -webkit-linear-gradient(rgba(145, 137, 137, 0.7), rgba(139, 128, 128, 0.7)), url(img/hero.jpg);*/
-    background-image: url(img/BackgroundPhoto2.jpg);
+/*    background-image: url(img/BackgroundPhoto2.jpg);*/
+    background-image: url(img/Untitled_Artwork22.png);
     background-size: cover;
-    background-position: center;
+/*    background-position: center;*/
     height: 100vh;
     background-attachment: fixed;
     overflow:hidden;
@@ -437,43 +438,26 @@ footer {
     color: #ddd;
 }
 
-.social-links li a:link,
-.social-links li a:visited {
-    font-size: 160%;
-}
-
-.ion-social-facebook,
-.ion-social-twitter,
-.ion-social-googleplus,
-.ion-social-instagram {
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-.ion-social-facebook:hover {
-    color: #3b5998;
-}
-
-.ion-social-twitter:hover {
-    color: #00aced;
-}
-
-.ion-social-googleplus:hover {
-    color: #dd4b39;
-}
-
-.ion-social-instagram:hover {
-    color: #517fa4;
-}
-
-
 footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
 }
 
-
+.footer-left{
+    color:#888;
+    float: left;
+/*    text-align: center;*/
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.footer-right{
+    color:#888;
+    float: right;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 10px;
+}
 
 
 /* ----------------------------------------------- */
@@ -678,7 +662,7 @@ a.control_next {
     font-weight: 500;
 }
 
-/* Mission and Vision Pic*/
+/* Mission and Vision Pic & Choose US Pic*/
 .aboutus-imgs {
     width: 100%;
     overflow: hidden;
@@ -711,6 +695,13 @@ a.control_next {
     background-color: auto;
 }
 
+
+.chooseus-photo img{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: auto;
+}
 
 
 
@@ -847,4 +838,6 @@ a.control_next {
     display: block;
   }
 }
+
+
 
